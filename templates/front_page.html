@@ -1,0 +1,55 @@
+{% extends 'boilerplate.html'%}
+
+{% block head %}
+<link rel="stylesheet" href="../static/frontpage.css">
+{% endblock %}
+
+{% block body %}
+    <p id = "instructional_message">Enter the details of your search below:</p>
+    <div id = "user_input">
+        <form name = "user_restaurant_search" method = "POST">
+            <p id = "search_title">Search for Restaurant</p>
+            <div class = "user_input_box">
+                <label for = "city_input" class = "input_label">City: </label>
+            	<select class="user_input_textbox" id="city_input" name="city_input" required>
+		    <option value = "" selected></option>
+		    {% for city in cities %}
+			<option value="{{ city.name }}">{{ city.name }}</option>	
+		    {% endfor %}
+		</select>
+	    </div>
+            <div class = "user_input_box">
+                <label for = "category_input" class = "input_label">Category: </label>
+                <select class = "user_input_textbox" id = "category_input" name = "category_input" required>
+			<option value = "" selected></option>
+		    {% for category in categories %}
+                        <option value="{{ category.title }}">{{ category.title}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class = "user_input_box">
+                <label for = "date_input" class = "input_label">Day: </label>
+                <select class = "user_input_textbox" id = "day_input" name = "day_input">
+		    <option value = "" selected></option>
+                    <option value = "Monday">Monday</option>
+                    <option value = "Tuesday">Tuesday</option>
+                    <option value = "Wednesday">Wednesday</option>
+                    <option value = "Thursday">Thursday</option>
+                    <option value = "Friday">Friday</option>
+                    <option value = "Saturday">Saturday</option>
+                    <option value = "Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class = "user_input_box">
+                <label for = "time_input" class = "input_label">Time: </label>
+                <input type = "time" class = "user_input_textbox" id = "time_input" name = "time_input">
+            </div>
+            <div id = "submit_box">
+                <input type = "submit" name = "submit_user_input" id = "submit_input" class = "user_input_textbox" value = "Search">
+            </div>
+        </form>
+    </div>
+
+    <div class = "footer_panel">
+    </div>
+{% endblock %}

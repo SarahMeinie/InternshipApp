@@ -1,0 +1,98 @@
+:root {
+    --theme-col-one: white;   /*Accent 1*/
+    --theme-col-two: #b55b22;   /*Panel complimentary color*/
+    --theme-col-three: #bcbdbd; /*Background color*/
+    --theme-col-four: #f9fbf6;  /*2nd background color*/
+    --theme-col-five: #201924;  /*Panel color*/ 
+    --theme-fontone: fontOne;
+    --theme-fonttwo: fontTwo;
+    --theme-fontthree: fontThree; 
+}
+
+@font-face {
+    font-family: fontOne;
+    src: url(Andina.otf)
+}
+@font-face {
+    font-family: fontTwo;
+    src: url(Quicksand.otf)
+}
+@font-face {
+    font-family: fontThree;
+    src: url(Quicksand_Italics.otf)
+}
+
+body {
+    font-family: var(--theme-fonttwo);
+
+    background: url("/static/Butter_Chicken_2.jpeg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#content {
+    padding: 40px 0 40px 0;
+}
+
+#title_panel {
+    background: linear-gradient(to bottom, var(--theme-col-five) 20%, #101010 80%);
+    padding: 15px;
+    font-family: var(--theme-fontone);
+}
+
+.title_text_box {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#title_text {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--theme-col-two);
+    width: 60%;
+    padding-left: 40px;
+}
+
+#title_description {
+    font-size: 1.8em;
+    color: var(--theme-col-four);
+}
+
+#footer {
+    background: linear-gradient(to bottom, var(--theme-col-five) 0%, #101010 100%);
+    text-align: center;
+    color: var(--theme-col-four);
+    padding: 15px;
+    font-size: 0.8em;
+    font-family: var(--theme-fontone);
+    bottom: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .title_text_box {
+        display: block;
+	margin: auto;
+	width: 90%;
+    } 
+}
+
+@media (max-width: 600px) { 
+    #title_text {font-size: 2.5em; padding: 0; width: 90%;}
+    #title_description {font-size: 1.4em; text-align: center}
+    .title_text_box {
+    	display: block; 
+	margin: auto;
+    }
+    #footer{
+	position: static;
+	font-size: 0.6em;
+	width: auto;
+    }
+}
