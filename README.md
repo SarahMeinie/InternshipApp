@@ -20,14 +20,19 @@ visit the restaurant.
 sudo pip3 install virtualenv
 ``` 
 
-1.2 Now, create a virtual environment: In the main directory type:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.2  Now, create a virtual environment. In the main directory type:
 ```bash
 virtualenv venv
 ``` 
 
-1.3 Lastly activate your virtual environment:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.3 To activate your virtual environment:
 ```bash
 source venv/bin/activate
+``` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.4 Finally, install the requirements
+```bash
+pip install -r requirements.txt
 ``` 
 
 2. Connect to the neo4j database with the following details:\
@@ -42,8 +47,6 @@ python3 main.py
 
 ## Submission Resources
 - Video walk-through of app available at [Video Link](https://youtu.be/3QvssOyfHdM)
-
-
 
 
 
