@@ -1,7 +1,7 @@
 # Yelp Restaurant Recommender 
 
 
-<img src="https://imgur.com/GZ46zUM.png" width="60">
+<img src="https://imgur.com/GZ46zUM.png" width="100">
 
 
 Use the Yelp dataset to develop a web application that will make restaurant
