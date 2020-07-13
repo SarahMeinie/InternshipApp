@@ -1,7 +1,7 @@
 # Yelp Restaurant Recommender 
 
 
-<img src="https://imgur.com/GZ46zUM.png" width="400">
+<img src="https://imgur.com/GZ46zUM.png" width="800">
 
 
 Use the Yelp dataset to develop a web application that will make restaurant
@@ -41,7 +41,6 @@ python3 main.py
 4. Follow the link to the website produced
 
 ## Submission Resources
-- [Live Website Server](http://167.99.89.23:5000)
 - Video walk-through of app available at [Video Link](https://youtu.be/3QvssOyfHdM)
 
 
