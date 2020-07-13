@@ -4,7 +4,7 @@
 <img src="https://imgur.com/GZ46zUM.png" width="1000">
 
 
-Use the Yelp dataset to develop a web application that will make restaurant
+In our Recommender we used the Yelp dataset to develop a web application that will make restaurant
 recommendations. The recommendations will be based off of criteria specified
 by the user. This criteria is: Cuisine served at the restaurant, the city that
 the restaurant is located in, the day and time that the user would like to
